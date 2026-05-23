@@ -2,200 +2,215 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Yrlla França</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yrlla Fran&ccedil;a</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-  <style>
-    h1 {
-      color: rgb(0, 0, 0);
-      font-family: 'Segow UI', "Segoe UI Bold", serif;
-      text-align: center;
-
-    }
-    h2 {
-      color: rgb(0, 0, 0);
-      font-family: 'Segoe UI', serif;
-      text-align: center;
-
-    }
-    body {
-      font-family: 'Segoe UI', 'Segoe UI Semilight', serif;
-      color:rgb(0, 0, 0);
-      
-    }
-    .background-desfocado {
-      /* background-image: url('background_dali.png'); */
-      /* background: rgba(146, 102, 102, 0.5); camada escura sobre o fundo */
-      /* height: 100vh; */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-  }
-  .estilo_icone_imagem {
-      position: absolute;
-      top: 20px;   /* distância do topo */
-      left: 10px; /* distância da esquerda */
-      width: 150px;
-      border-radius: 10px;
-  }
-  .icone_imagem {
-      position: absolute;
-      top: 70px;   /* distância do topo */
-      left: 500px; /* distância da esquerda */
-      width: 30px;
-      border-radius: 5px;
-  }
-  .icone_imagem2 {
-      position: absolute;
-      top: 58px;   /* distância do topo */
-      left: 530px; /* distância da esquerda */
-      width: 53px;
-      border-radius: 5px;
-  }
-  .icone_imagem3 {
-      position: absolute;
-      top: 63px;   /* distância do topo */
-      left: 580px; /* distância da esquerda */
-      width: 100px;
-      border-radius: 5px;
-  }
-  .icone_imagem4 {
-      position: absolute;
-      top: 63px;   /* distância do topo */
-      left: 675px; /* distância da esquerda */
-      width: 100px;
-      border-radius: 5px;
-  }
-  .imagem_exibir {
-      position: absolute;
-      /* top: 600px;   distância do topo */
-      /* left: 10px; distância da esquerda */
-      width: 250px;
-      border-radius: 5px;
-  }
-  p {
-    text-align: justify; /* todos os parágrafos justificados */
-  }
-
-  .imagem-topico {
-  display: grid; 
-  grid-template-columns: repeat(5, 1fr); /* 3 colunas iguais */
-  gap: 10px;    /* força a imagem a ficar em linha própria */
-  margin-top: 10px;    /* espaço entre o parágrafo e a imagem */
-  width: 400x;        /* tamanho da imagem */
-  height: auto;        /* mantém proporção */
-  }
-  .imagem-topico img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-  </style>
 <body>
 
-  <div class="background-desfocado">
-    <h1>Yrlla Mariana Vieira de França</h1>
-    <a href="https://www.linkedin.com/in/yrlla-mariana-vieira-de-fran%C3%A7a-4a1049177/" target="_blank">
-      <img src="icone_linkedin_2.png" alt="LinkedIn" class="icone_imagem">
-    </a>
-    <a href="https://github.com/yrllaa" target="_blank">
-      <img src="icone_github.png" alt="LinkedIn" class="icone_imagem2">
-    </a>
-    <a href="https://www.ime.usp.br/" target="_blank">
-      <img src="icone_ime.svg" alt="Ime" class="icone_imagem3">
-    </a>
-    <a href="https://www.ime.usp.br/ativestat/" target="_blank">
-      <img src="ativestat_icone.png" alt="Ime" class="icone_imagem4">
-    </a>
-    <h1>Sobre mim</h1>
-    <p>Sou formada em matemática pela USP, onde fui orientanda em iniciações cientificas durante toda graduação. 
-      Atualmente trabalho no mercado financeiro com "Risco de Crédito". Minha sede de conhecimento, aliada a responsabilidade e dedicação, 
-      são diferenciais, marcando meu perfil como analítico e com domínio em diversas áreas. 
-      Nesse exato momento estou aprendendo HTML e CSS para criar esse site :) 
-      Gosto muito de descobrir coisas novas e esses são algumas coisas que gosto: <br>
-      - <strong>Matemática</strong>: álgebra linear, análise real) <br>
-      - <strong>Artes</strong>: desenhos realistas, abstratos, natureza e com uso de diferentes técnicas); <br>
-      - <strong>Instrumentos</strong>: violão, ukulele, piano (2 músicas); - Literatura; - Filosofia; - Finanças; <br>
-      - <strong>Música</strong>: aprecio diversos tipos, gosto de ouvir uma mesma canção em diferentes línguas; <br>
-      - <strong>Fotografia analógica</strong>.</p>
-      <div class="imagem-topico"> 
-      <img src="foto_estatistica_1.JPEG" alt="foto 1">
-      <img src="foto_lousa_ime.JPEG" alt="foto 2">
-      <img src="desenho_2.JPEG" alt="foto 3">
-      <img src="camera_analogica_1.JPEG" alt="foto 4">
-      <img src="desenho_3.JPEG" alt="foto 5">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="#inicio" class="navbar-brand">Yrlla Fran&ccedil;a</a>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.navbar-links').classList.toggle('active')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar-links">
+        <li><a href="#inicio">In&iacute;cio</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#profissional">Profissional</a></li>
+        <li><a href="#recomendacoes">Recomenda&ccedil;&otilde;es</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <img src="assets/img/foto_perfil_linkedin.jpg" alt="Foto de Yrlla Fran&ccedil;a" class="hero-photo">
+      <h1>Yrlla Mariana Vieira de Fran&ccedil;a</h1>
+      <p class="subtitle">Matem&aacute;tica &middot; Analista de Risco de Cr&eacute;dito &middot; Artista</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/yrlla-mariana-vieira-de-fran%C3%A7a-4a1049177/" target="_blank" title="LinkedIn">
+          <img src="assets/img/icone_linkedin_2.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/yrllaa" target="_blank" title="GitHub">
+          <img src="assets/img/icone_github.png" alt="GitHub">
+        </a>
+        <a href="https://www.ime.usp.br/" target="_blank" title="IME-USP">
+          <img src="assets/img/icone_ime.svg" alt="IME-USP">
+        </a>
+        <a href="https://www.ime.usp.br/ativestat/" target="_blank" title="AtivEstat">
+          <img src="assets/img/ativestat_icone.png" alt="AtivEstat">
+        </a>
       </div>
-      
-  <div>
-    <h2>Profissional</h2>
-    <p>
-      Atuo como analista de Risco de Crédito desde 2022, fiz parte dos times de 'Abertura de Contas', 'Pós-Abertura' e 'Gestão Limites'. 
-      Desenvolvi diversas políticas de crédito com foco em cenários diversos: expansão, prospecção, retenção e cortes. 
-      Vejo muita similaridade entre a matemática e o mercado financeiro, e isso vai além dos números. 
-      Consigo aplicar diversos conceitos de lógica no meu dia a dia, que trazem impacto real para o negócio. 
-      Fui finalista e campeã em premiações da VP (Risk Expert), destaque em entregas da Diretoria e participante 
-      ativa de diversas discussões sobre diferentes temas relacionados a crédito.
-    </p>
-    <iframe 
-      src="https://s.tradingview.com/widgetembed/?symbol=BMFBOVESPA:IBOV" 
-      width="600" 
-      height="400" 
-      frameborder="0"
-      style="border:0;">
-    </iframe>
-    <iframe 
-      src="https://painel.ibge.gov.br/pnadc/" 
-      width="600" 
-      height="400" 
-      frameborder="0"
-      style="border:0;">
-    </iframe>
-  </div>
+    </div>
+  </section>
 
-  <div>
-    <h2>O quê?</h2>
-      
-      <h3>Matemática | Estatística</h3>
-    <p>
-      Se você não sabe o que é estatística | matemática (são diferentes entre si), nada melhor do que ir um dia ao Instuto de Matemática e Estatística da USP (IME-USP) e 
-      participar amigavelmente de uma aula. Apesar de parecer uma realidade distante para muitas pessoas, o IME é um lugar aberto a todos.
-      É um privilégio termos no Brasil um local com tantos bons professores. Torna-se muito fácil se apaixonar por qualquer tópico.
-      <br>
-      De qualquer forma, segue lista de livros que indico que também trazem um panorama bem legal sobre: <br>
-      - <strong>"Noções de Probabilidade e Estatística" - 8ª edição</strong>, Edusp - Editora da Universidade de São Paulo. Marcos N. Magalhães e Antonio Carlos P. de Lima. <br>
-      - <strong>"Estatística Básica"</strong>, Editora LTC. Wilton de Oliveira Bussab e Pedro Alberto Morettin. <br>
-      - <strong>"Matemática para Licenciatura"</strong>,Edgard Blucher Ltda, 3 edition, 2006. Geraldo Ávila. <br>
-      - <strong>"Análise Real"</strong>, IMPA, CNPq, 1997. Elon Lages Lima. <br>
-      - <strong>"Um Curso de Cálculo"</strong>, volume 1-4. LTC Editora, 2001. Hamilton Guidorizzi<br>
+  <!-- Sobre Mim -->
+  <section id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre mim</h2>
+      <div class="section-line"></div>
+      <p class="about-text">
+        Sou formada em matem&aacute;tica pela USP, onde fui orientanda em inicia&ccedil;&otilde;es cient&iacute;ficas durante toda a gradua&ccedil;&atilde;o.
+        Atualmente trabalho no mercado financeiro com Risco de Cr&eacute;dito. Minha sede de conhecimento, aliada &agrave;
+        responsabilidade e dedica&ccedil;&atilde;o, s&atilde;o diferenciais que marcam meu perfil como anal&iacute;tico, com dom&iacute;nio em diversas &aacute;reas.
+        Gosto muito de descobrir coisas novas e estes s&atilde;o alguns dos meus interesses:
       </p>
-       <h3>Risco de Crédito</h3>
-      <p>
-      Esse é um tema que indico que seja discutido com profissinais da área ou frenquentado aulas da Faculdade de Economia, Administração e Contabilidade da USP (FEA-USP).
-      <br>
-      Algumas indicações: <br>
-      - <strong>"Crédito - Análise e Avaliação do Risco: Análise e Avaliação do Risco"</strong>, Saint Paul. José Roberto Securato. <br>
-      - <strong>"O investidor inteligente"</strong>, Harper Colins. Benjamin Graham. <br>
-      </p>
-      <h3>Vida</h3>
-       <p>
-      Esse todos sabemos (mesmo quando achamos não saber).
-      <br>
-      Algumas indicações / últimas leituras / músicas: <br>
-      - <strong>"A Intermitência da Morte"</strong>, Companhia das Letras. José Saramago. <br>
-      - <strong>"O Mito de Sísifo"</strong>, Record. Albert Camus. <br>
-      - <strong>"O Existencialismo é um Humanismo"</strong>, Guia de Bolso. Jean-Paul Sartre. <br>
-      - <strong>"Vidas Secas"</strong>, Penguin. Graciliano Ramos. <br>
-      - <strong>"Livro do Desassossego"</strong>, Principis. Fernando Pessoa. <br>
-      - <strong>Todos do Dostoiévski</strong>. <br>
-      - <strong>Todos poemas de Cecília Meireles</strong>. <br>
-      - <strong>Todos poemas de Carlos Drummond de Andrade</strong>. <br>
-      - <strong>"A Hora da Estrela"</strong>, Companhia das Letras. Clarice Lispector. <br>
-      - <strong>"O poeta e o violão"</strong> - Toquinho e Vinicius. <br>
-      - <strong>"Rio Revisited"</strong> - Gal e Antônio Carlos. <br>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="icon">&sum;</div>
+          <h4>Matem&aacute;tica</h4>
+          <p>&Aacute;lgebra linear, an&aacute;lise real</p>
+        </div>
+        <div class="interest-card">
+          <div class="icon">&#127912;</div>
+          <h4>Artes</h4>
+          <p>Desenhos realistas, abstratos e com diferentes t&eacute;cnicas</p>
+        </div>
+        <div class="interest-card">
+          <div class="icon">&#127928;</div>
+          <h4>Instrumentos</h4>
+          <p>Viol&atilde;o, ukulele, piano</p>
+        </div>
+        <div class="interest-card">
+          <div class="icon">&#127925;</div>
+          <h4>M&uacute;sica</h4>
+          <p>Diversos g&ecirc;neros, uma mesma can&ccedil;&atilde;o em diferentes l&iacute;nguas</p>
+        </div>
+        <div class="interest-card">
+          <div class="icon">&#128247;</div>
+          <h4>Fotografia</h4>
+          <p>Fotografia anal&oacute;gica</p>
+        </div>
+        <div class="interest-card">
+          <div class="icon">&#128218;</div>
+          <h4>Literatura &amp; Filosofia</h4>
+          <p>De Dostoievski a Saramago</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      </p>
-</div>
+  <!-- Galeria -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <h2 class="section-title">Galeria</h2>
+      <div class="section-line"></div>
+      <div class="gallery-grid">
+        <img src="assets/img/foto_estatistica_1.JPEG" alt="Estat&iacute;stica e matem&aacute;tica">
+        <img src="assets/img/foto_lousa_ime.JPEG" alt="Lousa do IME-USP">
+        <img src="assets/img/desenho_2.JPEG" alt="Desenho art&iacute;stico">
+        <img src="assets/img/camera_analogica_1.JPEG" alt="C&acirc;mera anal&oacute;gica">
+        <img src="assets/img/desenho_3.JPEG" alt="Desenho art&iacute;stico">
+      </div>
+    </div>
+  </section>
+
+  <!-- Profissional -->
+  <section class="professional" id="profissional">
+    <div class="container">
+      <h2 class="section-title">Profissional</h2>
+      <div class="section-line"></div>
+      <div class="professional-content">
+        <p>
+          Atuo como analista de Risco de Cr&eacute;dito desde 2022, tendo feito parte dos times de
+          Abertura de Contas, P&oacute;s-Abertura e Gest&atilde;o de Limites.
+          Desenvolvi diversas pol&iacute;ticas de cr&eacute;dito com foco em cen&aacute;rios diversos: expans&atilde;o,
+          prospec&ccedil;&atilde;o, reten&ccedil;&atilde;o e cortes.
+        </p>
+        <p>
+          Vejo muita similaridade entre a matem&aacute;tica e o mercado financeiro, e isso vai al&eacute;m dos n&uacute;meros.
+          Consigo aplicar diversos conceitos de l&oacute;gica no meu dia a dia, que trazem impacto real para o neg&oacute;cio.
+          Fui finalista e campe&atilde; em premia&ccedil;&otilde;es da VP (Risk Expert), destaque em entregas da Diretoria e
+          participante ativa de diversas discuss&otilde;es sobre diferentes temas relacionados a cr&eacute;dito.
+        </p>
+        <div class="highlights">
+          <span class="highlight-tag">Risco de Cr&eacute;dito</span>
+          <span class="highlight-tag">Pol&iacute;ticas de Cr&eacute;dito</span>
+          <span class="highlight-tag">An&aacute;lise de Dados</span>
+          <span class="highlight-tag">Risk Expert</span>
+          <span class="highlight-tag">Expans&atilde;o &amp; Prospec&ccedil;&atilde;o</span>
+          <span class="highlight-tag">L&oacute;gica Matem&aacute;tica</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recomendacoes -->
+  <section class="recommendations" id="recomendacoes">
+    <div class="container">
+      <h2 class="section-title">Recomenda&ccedil;&otilde;es</h2>
+      <div class="section-line"></div>
+
+      <div class="rec-category">
+        <h3>Matem&aacute;tica &amp; Estat&iacute;stica</h3>
+        <p style="color:#555; margin-bottom:1rem; font-size:0.95rem;">
+          Se voc&ecirc; n&atilde;o sabe o que &eacute; estat&iacute;stica ou matem&aacute;tica, nada melhor do que visitar o
+          Instituto de Matem&aacute;tica e Estat&iacute;stica da USP (IME-USP). &Eacute; um privil&eacute;gio termos no Brasil
+          um local com tantos bons professores. Torna-se f&aacute;cil se apaixonar por qualquer t&oacute;pico.
+        </p>
+        <ul class="book-list">
+          <li><strong>No&ccedil;&otilde;es de Probabilidade e Estat&iacute;stica</strong> &mdash; 8&ordf; edi&ccedil;&atilde;o <span class="author">&mdash; Marcos N. Magalh&atilde;es e Antonio Carlos P. de Lima (Edusp)</span></li>
+          <li><strong>Estat&iacute;stica B&aacute;sica</strong> <span class="author">&mdash; Wilton de Oliveira Bussab e Pedro Alberto Morettin (LTC)</span></li>
+          <li><strong>Matem&aacute;tica para Licenciatura</strong> <span class="author">&mdash; Geraldo &Aacute;vila (Edgard Bl&uuml;cher, 2006)</span></li>
+          <li><strong>An&aacute;lise Real</strong> <span class="author">&mdash; Elon Lages Lima (IMPA, 1997)</span></li>
+          <li><strong>Um Curso de C&aacute;lculo</strong> &mdash; volumes 1&ndash;4 <span class="author">&mdash; Hamilton Guidorizzi (LTC, 2001)</span></li>
+        </ul>
+      </div>
+
+      <div class="rec-category">
+        <h3>Risco de Cr&eacute;dito</h3>
+        <p style="color:#555; margin-bottom:1rem; font-size:0.95rem;">
+          Tema que recomendo discutir com profissionais da &aacute;rea ou frequentar aulas da FEA-USP.
+        </p>
+        <ul class="book-list">
+          <li><strong>Cr&eacute;dito &mdash; An&aacute;lise e Avalia&ccedil;&atilde;o do Risco</strong> <span class="author">&mdash; Jos&eacute; Roberto Securato (Saint Paul)</span></li>
+          <li><strong>O Investidor Inteligente</strong> <span class="author">&mdash; Benjamin Graham (Harper Collins)</span></li>
+        </ul>
+      </div>
+
+      <div class="rec-category">
+        <h3>Vida &mdash; Leituras &amp; M&uacute;sica</h3>
+        <ul class="book-list">
+          <li><strong>A Intermit&ecirc;ncia da Morte</strong> <span class="author">&mdash; Jos&eacute; Saramago (Companhia das Letras)</span></li>
+          <li><strong>O Mito de S&iacute;sifo</strong> <span class="author">&mdash; Albert Camus (Record)</span></li>
+          <li><strong>O Existencialismo &eacute; um Humanismo</strong> <span class="author">&mdash; Jean-Paul Sartre</span></li>
+          <li><strong>Vidas Secas</strong> <span class="author">&mdash; Graciliano Ramos (Penguin)</span></li>
+          <li><strong>Livro do Desassossego</strong> <span class="author">&mdash; Fernando Pessoa (Principis)</span></li>
+          <li><strong>Todos do Dostoievski</strong></li>
+          <li><strong>Todos os poemas de Cec&iacute;lia Meireles</strong></li>
+          <li><strong>Todos os poemas de Carlos Drummond de Andrade</strong></li>
+          <li><strong>A Hora da Estrela</strong> <span class="author">&mdash; Clarice Lispector (Companhia das Letras)</span></li>
+          <li><strong>O Poeta e o Viol&atilde;o</strong> <span class="author">&mdash; Toquinho e Vinicius</span></li>
+          <li><strong>Rio Revisited</strong> <span class="author">&mdash; Gal Costa e Ant&ocirc;nio Carlos Jobim</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/yrlla-mariana-vieira-de-fran%C3%A7a-4a1049177/" target="_blank" title="LinkedIn">
+        <img src="assets/img/icone_linkedin_2.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/yrllaa" target="_blank" title="GitHub">
+        <img src="assets/img/icone_github.png" alt="GitHub">
+      </a>
+      <a href="https://www.ime.usp.br/" target="_blank" title="IME-USP">
+        <img src="assets/img/icone_ime.svg" alt="IME-USP">
+      </a>
+    </div>
+    <p>&copy; 2025 Yrlla Fran&ccedil;a. Todos os direitos reservados.</p>
+    <p class="disclaimer">Este site foi desenvolvido com o aux&iacute;lio de intelig&ecirc;ncia artificial (Devin AI).</p>
+  </footer>
 
 </body>
 </html>
