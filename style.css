@@ -393,6 +393,13 @@ section {
   color: #888;
 }
 
+.footer .disclaimer {
+  font-size: 0.72rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 /* ===== Mobile Responsive ===== */
 @media (max-width: 768px) {
   .navbar-links {
